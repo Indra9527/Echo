@@ -1,6 +1,7 @@
 {
   "name": "cs32-sprint1-gearup",
   "version": "22.2.0",
+  "homepage": "https://Indra9527.github.io/echo",
   "description": "Brown CSCI0320 Sprint 1 Gearup for Fall 2022",
   "license": "UNLICENSED",
   "dependencies": {
@@ -24,6 +25,8 @@
   },
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
